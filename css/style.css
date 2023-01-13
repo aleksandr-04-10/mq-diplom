@@ -262,6 +262,7 @@
 }
 
 .trend-card {
+    width: 100%;
     z-index: 2;
     margin: 0 20px 15px 20px;
     border: 3px solid #b59f5b;;
@@ -291,7 +292,7 @@
     color: #b59f5b;;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1200px) {
     .trend-list {
         flex-wrap: wrap;
         justify-content: center;
@@ -301,7 +302,7 @@
         width: 35%;
     }
 }
-
+/*
 @media (max-width: 916px) {
     .trend-item {
         width: 45%;
@@ -311,8 +312,8 @@
         font-size: 1.5vw;
     }
 }
-
-@media (max-width: 768px) {
+*/
+@media (max-width: 1200px) {
     .trend-list {
         flex-wrap: wrap;
         gap: 3px;
@@ -338,7 +339,7 @@
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 640px) and (orientation: portrait) {
     .trend-title {
         font-size: 16px;
     }
@@ -928,10 +929,6 @@
     background-color: #323232;
 }
 
-.shop-button-text {
-    
-}
-
 @media (max-width: 916px) {
     .goods {
         padding: 0 35px;
@@ -1088,7 +1085,7 @@
 }
 
 .popup {
-    display: none;
+    display: flex;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
@@ -1144,10 +1141,6 @@
     padding: 50px 30px;
 }
 
-.output {
-
-}
-
 .output-row {
     margin-top: 35px;
 }
@@ -1172,6 +1165,7 @@
 .frequency {
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     margin-top: 10px;
     padding: 0 20px;
     width: 100%;
@@ -1191,6 +1185,7 @@
 .subscription {
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance: none;
     margin-top: 10px;
     position: relative;
     vertical-align: -2px;
