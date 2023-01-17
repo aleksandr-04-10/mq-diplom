@@ -265,8 +265,8 @@
     width: 100%;
     z-index: 2;
     margin: 0 20px 15px 20px;
-    border: 3px solid #b59f5b;;
-    padding: 30px 35px 30px 25px;
+    border: 3px solid #b59f5b;
+    padding: 30px 30px 30px 25px;
 }
 
 .trend-link-list {
@@ -284,7 +284,7 @@
 }
 
 .card-title-link {
-    font-size: 20px;
+    font-size: inherit;
     color: inherit;
 }
 
@@ -292,30 +292,38 @@
     color: #b59f5b;;
 }
 
-@media (max-width: 1200px) {
+@media (orientation: landscape) and (min-width: 641px) and (max-width: 1200px) {
     .trend-list {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 3px;
     }
 
     .trend-item {
-        width: 35%;
+        width: 24.9%;
+        min-height: 19.21vw;
     }
-}
-/*
-@media (max-width: 916px) {
-    .trend-item {
-        width: 45%;
+
+    .trend-title {
+        font-size: inherit;
     }
 
     .trend-card-title {
-        font-size: 1.5vw;
+        font-size: inherit;
+    }
+
+    .trend-card {
+        padding: 30px 15px 30px 25px;
+    }
+
+    .trend-item {
+        padding-top: 20px;
     }
 }
-*/
-@media (max-width: 1200px) {
+
+@media (orientation: portrait) and (min-width: 641px) and (max-width: 1200px) {
     .trend-list {
         flex-wrap: wrap;
+        justify-content: center;
         gap: 3px;
     }
 
@@ -333,13 +341,11 @@
     }
 }
 
-@media (max-width: 610px) {
-    .trend-item {
-        width: 294px;
+@media (max-width: 640px) {
+    .trend-list {
+        flex-wrap: wrap;
+        gap: 2px;
     }
-}
-
-@media (max-width: 640px) and (orientation: portrait) {
     .trend-title {
         font-size: 16px;
     }
